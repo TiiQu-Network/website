@@ -1,0 +1,32 @@
+{
+  "name": "tiiqu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robmoya/tiiqu.git"
+  },
+  "author": "lastres.moya.53@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robmoya/tiiqu/issues"
+  },
+  "homepage": "https://github.com/robmoya/tiiqu#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
+  }
+}
