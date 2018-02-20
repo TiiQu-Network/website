@@ -4,7 +4,7 @@
 
 
 function init() {
-
+  require('jquery');
   require('bootstrap');
 }
 

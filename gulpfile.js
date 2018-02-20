@@ -87,11 +87,11 @@ gulp.task('serve', ['sass','js'], function(){
 
 
 gulp.task('public', function () {
-    gulp.src('./*.html')
+    gulp.src('./index.html')
         .pipe(gulp.dest(publicPath));
-   gulp.src('./*.css')
+   gulp.src('./main.css')
        .pipe(gulp.dest(publicPath));
-   gulp.src('./*.js')
+   gulp.src('./index.js')
        .pipe(gulp.dest(publicPath));
 
 });

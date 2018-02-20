@@ -15,21 +15,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/font-awesome/scss/font-awesome';
-// @import './custom-theme/variables';
+@import './custom-theme/variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Custom Theme
-// @import "./custom-theme/functions";
+@import "./custom-theme/functions";
 // @import "./custom-theme/mixins";
 // @import "./custom-theme/root";
 // @import "./custom-theme/print";
-// @import "./custom-theme/reboot";
+@import "./custom-theme/reboot";
 // @import "./custom-theme/type";
 // @import "./custom-theme/images";
 // @import "./custom-theme/code";
 // @import "./custom-theme/grid";
 // @import "./custom-theme/tables";
-// @import "./custom-theme/forms";
+@import "./custom-theme/forms";
 // @import "./custom-theme/buttons";
 // @import "./custom-theme/transitions";
 // @import "./custom-theme/dropdown";
@@ -38,7 +38,7 @@
 // @import "./custom-theme/custom-forms";
 // @import "./custom-theme/nav";
 // @import "./custom-theme/navbar";
-// @import "./custom-theme/card";
+@import "./custom-theme/card";
 // @import "./custom-theme/breadcrumb";
 // @import "./custom-theme/pagination";
 // @import "./custom-theme/badge";
@@ -48,8 +48,10 @@
 // @import "./custom-theme/media";
 // @import "./custom-theme/list-group";
 // @import "./custom-theme/close";
-// @import "./custom-theme/modal";
+@import "./custom-theme/modal";
 // @import "./custom-theme/tooltip";
 // @import "./custom-theme/popover";
 // @import "./custom-theme/carousel";
 // @import "./custom-theme/utilities";
+
+@import "./custom-theme/sections";

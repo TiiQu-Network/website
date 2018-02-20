@@ -1,0 +1,101 @@
+.bg-cover-fixed {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url('./assets/images/bg-1.jpg');
+  color: $white;
+  padding-bottom: 5rem;
+  @extend .bg-cover-fixed;
+  min-height: 75vh;
+  position: relative;
+  .header-content {
+    padding-top: 15vh;
+  }
+  // &:after {
+  //   content: '';
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   position: absolute;
+  // }
+}
+
+.bg-trans {
+  background-color: rgba(0,0,0,.3);
+}
+.bg-ethereum {
+  position: relative;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./assets/images/bg-ethereum.png');
+    top: 0;
+    left: 0;
+    @extend .bg-cover-fixed;
+  }
+}
+.bg-map {
+  background-image: url('./assets/images/map.png');
+  @extend .bg-cover-fixed;
+}
+.bg-work {
+  background-image: url('./assets/images/bg-work-trans.png');
+  @extend .bg-cover-fixed;
+}
+.bg-gradient-primary {
+  // @mixin gradient-y($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  @include gradient-y(#3DDEB7, #26CF90);
+}
+
+.bg-skew {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $info;
+    transform: skewY(5deg);
+  }
+
+  &.bg-mid-skew {
+    &:before {
+      top: 60%;
+    }
+  }
+  &.bg-bottom-skew {
+    &:before {
+      top: 87%;
+    }
+  }
+  &.bg-primary {
+    &:before {
+      @extend .bg-work;
+    }
+  }
+  &.bg-info {
+    &:before {
+      background-color: $light;
+    }
+  }
+}
+.title-border {
+  position: relative;
+  height: 3px;
+  width: 3rem;
+  border-radius: $border-radius;
+  background-color: $primary;
+  margin: auto;
+  display: inline-block;
+}
+.text-shadow {
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
